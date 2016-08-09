@@ -1,0 +1,134 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  height: 100%;
+  font-family: Lato, sans-serif; }
+
+#mainWrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black; }
+  #mainWrapper .navBar {
+    height: 12%;
+    background: #f5edfc; }
+    #mainWrapper .navBar .title {
+      display: inline-block;
+      margin-left: 15px;
+      font-size: 2.5em;
+      margin-top: 10px; }
+    #mainWrapper .navBar .navButtons {
+      display: inline-block;
+      float: right;
+      margin-top: 18px; }
+    #mainWrapper .navBar li {
+      display: inline-block;
+      margin-right: 20px;
+      background: white;
+      padding: 8px; }
+    #mainWrapper .navBar li:hover {
+      background-color: #cfa8f0; }
+  #mainWrapper .contentWrapper {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%; }
+    #mainWrapper .contentWrapper .login {
+      width: 22%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px; }
+      #mainWrapper .contentWrapper .login input {
+        width: 100%;
+        display: block;
+        margin-bottom: 5px;
+        border: none;
+        border-bottom: 1px solid #cfa8f0;
+        outline: none; }
+      #mainWrapper .contentWrapper .login button {
+        display: block;
+        width: 90%;
+        padding: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        background: #cfa8f0;
+        border: none; }
+      #mainWrapper .contentWrapper .login .fail {
+        color: #cc4a60; }
+      #mainWrapper .contentWrapper .login .success {
+        color: #2ff9b7; }
+    #mainWrapper .contentWrapper .signUp {
+      width: 22%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px; }
+      #mainWrapper .contentWrapper .signUp input {
+        width: 100%;
+        display: block;
+        margin-bottom: 5px;
+        border: none;
+        border-bottom: 1px solid #cfa8f0;
+        outline: none; }
+      #mainWrapper .contentWrapper .signUp button {
+        display: block;
+        width: 90%;
+        padding: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        background: #cfa8f0;
+        border: none; }
+      #mainWrapper .contentWrapper .signUp p {
+        width: 200%; }
+      #mainWrapper .contentWrapper .signUp .fail {
+        color: #cc4a60; }
+      #mainWrapper .contentWrapper .signUp .success {
+        color: #2ff9b7; }
+
+/*# sourceMappingURL=styles.css.map */
