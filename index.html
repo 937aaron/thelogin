@@ -26,12 +26,19 @@
         <form class= "login" ng-show="loginShow" ng-submit="validateLogin()">
           <input type="text" placeholder="username" ng-model="loginUsername"></input>
           <input type=password placeholder="password" ng-model="loginPassword"></input>
+          <p class="success" ng-show="successLogin">Successfully logged in as {{succesUser}}</p>
+          <p class="fail" ng-show="failLogin">Sorry your username/password combination was incorrect</p>
           <button type="subit">log_in</button>
         </form>
         <form class= "signUp" ng-show="signUpShow" ng-submit="validateSignUp()">
           <input type="text" placeholder="username" ng-model="signUpUsername"></input>
           <input type=password placeholder="password" ng-model="signUpPassword"></input>
           <input type=password placeholder="confirm password" ng-model="signUpConfirmPassword"></input>
+          <p class="passwordReq" ng-show="signUpShow">Password must be 8 characters</p>
+          <p class="success" ng-show="successSignUp">Successfully signed up!</p>
+          <p class="fail" ng-show="failUsername">Sorry that username is taken</p>
+          <p class="fail" ng-show="failPasswordMatch">Sorry your passwords don't match</p>
+          <p class="fail" ng-show="failPasswordShort">Sorry your password isn't long enough</p>
           <button type="subit">sign_up</button>
         </form>
       </div>

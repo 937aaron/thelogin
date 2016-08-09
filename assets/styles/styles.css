@@ -99,6 +99,10 @@ body {
         margin-top: 10px;
         background: #cfa8f0;
         border: none; }
+      #mainWrapper .contentWrapper .login .fail {
+        color: #cc4a60; }
+      #mainWrapper .contentWrapper .login .success {
+        color: #2ff9b7; }
     #mainWrapper .contentWrapper .signUp {
       width: 22%;
       margin-left: auto;
@@ -120,5 +124,11 @@ body {
         margin-top: 10px;
         background: #cfa8f0;
         border: none; }
+      #mainWrapper .contentWrapper .signUp p {
+        width: 200%; }
+      #mainWrapper .contentWrapper .signUp .fail {
+        color: #cc4a60; }
+      #mainWrapper .contentWrapper .signUp .success {
+        color: #2ff9b7; }
 
 /*# sourceMappingURL=styles.css.map */
