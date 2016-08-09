@@ -32,15 +32,15 @@ theLogin.controller('theLoginController',function($scope){
     }
     for (var i = 0; i < users.length; i++){
       if(loginUser.username === users[i].username && loginUser.password === users[i].password){
-        console.log("success")
+        // console.log("success")
         $scope.succesUser = loginUser.username;
         $scope.successLogin= true;
         $scope.failLogin = false;
         return 'success'
       }
       else {
-        console.log("nope")
-        console.log(users)
+        // console.log("nope")
+        // console.log(users)
         $scope.failLogin = true;
         $scope.successLogin= false;
         return 'fail'
@@ -55,7 +55,7 @@ theLogin.controller('theLoginController',function($scope){
     }
     for (var i = 0; i < users.length; i++){
     if (signUpUser.username === users[i].username){
-      console.log('this username is taken')
+      // console.log('this username is taken')
       $scope.failUsername = true;
       $scope.failPasswordMatch = false;
       $scope.failPasswordShort = false;
@@ -63,7 +63,7 @@ theLogin.controller('theLoginController',function($scope){
       return 'error'
     }
     else if(signUpUser.password != signUpUser.password_confirmation){
-      console.log('these passwords dont match')
+      // console.log('these passwords dont match')
       $scope.failPasswordMatch = true;
       $scope.failUsername = false;
       $scope.failPasswordShort = false;
@@ -71,7 +71,7 @@ theLogin.controller('theLoginController',function($scope){
       return 'error'
     }
     else if (signUpUser.password.length < 8){
-      console.log('your password is too short');
+      // console.log('your password is too short');
       $scope.failPasswordShort = true;
       $scope.failPasswordMatch = false;
       $scope.failUsername = false;
@@ -85,7 +85,7 @@ theLogin.controller('theLoginController',function($scope){
       $scope.failPasswordMatch = false;
       $scope.failUsername = false;
       users.push(signUpUser);
-      console.log('ok');
+      // console.log('ok');
       return 'success'
     }
   }
