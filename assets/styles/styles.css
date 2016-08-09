@@ -52,8 +52,7 @@ body {
 #mainWrapper {
   position: absolute;
   height: 100%;
-  width: 100%;
-  border: 1px solid black; }
+  width: 100%; }
   #mainWrapper .navBar {
     height: 12%;
     background: #f5edfc; }
