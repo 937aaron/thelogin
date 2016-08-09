@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="assets/styles/styles.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+    <script src="assets/scripts/app.js"></script>
+    <script src="assets/scripts/controllers/theLoginController.js"></script>
+
+    <title>The Login</title>
+  </head>
+  <body ng-app="theLogin">
+    <div id="mainWrapper" ng-controller="theLoginController">
+      <header class="navBar">
+        <h1 class="title">
+          The_Login
+        </h1>
+        <ul class="navButtons">
+          <li ng-click="loginShowFunc()">log_in</li>
+          <li ng-click="signUpShowFunc()">sign_up</li>
+        </ul>
+      </header>
+      <div class="contentWrapper">
+        <form class= "login" ng-show="loginShow" ng-submit="validateLogin()">
+          <input type="text" placeholder="username" ng-model="loginUsername"></input>
+          <input type=password placeholder="password" ng-model="loginPassword"></input>
+          <button type="subit">log_in</button>
+        </form>
+        <form class= "signUp" ng-show="signUpShow" ng-submit="validateSignUp()">
+          <input type="text" placeholder="username" ng-model="signUpUsername"></input>
+          <input type=password placeholder="password" ng-model="signUpPassword"></input>
+          <input type=password placeholder="confirm password" ng-model="signUpConfirmPassword"></input>
+          <button type="subit">sign_up</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
